@@ -2,7 +2,7 @@
 HTML + CSS + Javascript (JQuery).
 
 # Source Repository
-https://github.com/dathoang9797/ShoesTest
+https://github.com/dathoang9797/shoestest.git
 
 # Heroku Linked
-https://git.heroku.com/shose-test.git
+https://shoes-test-hoangdat.herokuapp.com
