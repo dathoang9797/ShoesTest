@@ -1,0 +1,23 @@
+{
+  "name": "webdev-intern-assignment",
+  "version": "1.0.0",
+  "description": "This is the instruction for web developer intern assignment at [Golden Owl](https://goldenowl.asia). You will build a simple shopping cart.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dathoang9797/ShoesTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dathoang9797/ShoesTest/issues"
+  },
+  "homepage": "https://github.com/dathoang9797/ShoesTest#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
