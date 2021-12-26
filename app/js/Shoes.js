@@ -219,11 +219,13 @@ class Shoes {
     const shoesList = this.getAllShoesFromLocalStorage();
     const cartItemIndex = this.getCartItemIndex(cartItem);
 
-    if (cartItemButtonContent === "-") {
+    if (
+      cartItemButtonContent === "-" &&
       cartTitleRight.text(
         `$${(cartTitleRightPrice - priceCartItem).toFixed(2)}`
-      );
-      cartItemCountNumber.text(`${+cartItemCountNumber.text() - 1}`);
+      ) &&
+      cartItemCountNumber.text(`${+cartItemCountNumber.text() - 1}`)
+    ) {
       if (+cartItemCountNumber.text() === 0) {
         cardItemButton
           .removeClass("inactive animate__animated animate__fadeInDown")
@@ -242,11 +244,13 @@ class Shoes {
       return;
     }
 
-    if (cartItemButtonContent === "+") {
+    if (
+      cartItemButtonContent === "+" &&
       cartTitleRight.text(
         `$${(cartTitleRightPrice + priceCartItem).toFixed(2)}`
-      );
-      cartItemCountNumber.text(`${+cartItemCountNumber.text() + 1}`);
+      ) &&
+      cartItemCountNumber.text(`${+cartItemCountNumber.text() + 1}`)
+    ) {
       cartItem.count = +cartItemCountNumber.text();
       shoesList[cartItemIndex] = cartItem;
       this.setShoesInLocalStorage(shoesList);
